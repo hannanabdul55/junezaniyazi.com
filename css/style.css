@@ -38,9 +38,11 @@ Table of contents
     Google font
 ====================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
-
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
+</style>
 /* ===================================
     Reset
 ====================================== */
@@ -78,12 +80,12 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 
 /* font family */
 .alt-font {font-family: 'Montserrat', sans-serif; font-weight: 500}
-.main-font {font-family: 'Roboto', sans-serif;}
+.main-font {font-family: 'Karla', serif;}
 
 /* heading */
 h1, h2, h3, h4, h5, h6 ,{margin:0 0 25px; padding:0; letter-spacing: 0; font-weight: 400;}
-h1 {font-size:100px; line-height: 80px;}
-h2 {font-size:55px; line-height:60px}
+h1 {font-size:80px; line-height: 80px;}
+h2 {font-size:45px; line-height:55px}
 h3 {font-size:48px; line-height:54px}
 h4 {font-size:40px; line-height:46px}
 h5 {font-size:32px; line-height:42px}
@@ -115,7 +117,7 @@ h6 {font-size:25px; line-height:30px}
 .text-deep-blue {color:#374a9f}
 .text-light-blue {color:#617ebe}
 .text-new-pink {color:rgba(255, 33, 79, 0.85)}
-.text-orange {color:#ED3A24}
+.text-orange {color:#DD2331}
 
 /* dropcap */
 .first-letter {float: left; font-size: 50px; line-height: auto; margin: 0 20px 0 0; text-align: center; padding: 10px 0; font-weight: 600}
@@ -211,7 +213,7 @@ a.text-very-light-gray-hover:hover {color:#ededed}
 .text-outside-line-full::before {content: ""; position: absolute; top: 50%; height: 1px; width: 99%; display: block; border-bottom:1px solid; right: 100%; margin-right: 25px; opacity: .15}
 .text-outside-line-full::after {content: ""; position: absolute; top: 50%; height: 1px; width: 99%; display: block; border-bottom:1px solid; left: 100%; margin-left: 25px; opacity: .15 }
 .text-middle-line:before {border-bottom: 1px solid; position: absolute; content: ""; width: 100%; top: 53%; opacity: 0.35}
-.text-bottom-line {width: 1px; border-top: 30px solid; margin-left: auto; margin-right: auto;}
+.text-bottom-line {width: 1px; border-top: 2px solid; margin-left: auto; margin-right: auto;}
 .text-middle-line-deep-pink:before {border-bottom: 1px solid #ff214f; position: absolute; content: ""; width: 100%; margin-top: 5px; margin-left: -20px; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
 .text-decoration-line-through-black,.text-decoration-line-through-deep-pink {position: relative;}
 .text-decoration-line-through-deep-pink:before {background: #ff214f;}
@@ -293,6 +295,13 @@ a.text-very-light-gray-hover:hover {color:#ededed}
 .bg-deep-pink-opacity {background-color: rgba(255, 33, 79, 0.85);}
 .bg-charcoal-gray{background-color: #0e0f10;}
 .bg-pale-blue{background-color: #617ebe;}
+.bg-blue{background-color: #98bdcc;}
+.bg-black1{background-color: #505050;}
+#grad1 {
+    height: 100%;
+    background: #BDCADB; /* For browsers that do not support gradients */
+    background: linear-gradient(#fff,#fff,#BDCADB); /* Standard syntax (must be last) */
+}
 
 
 /* ===================================
@@ -456,8 +465,8 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .btn.btn-dark-gray:hover, .btn.btn-dark-gray:focus {background: transparent; color: #232323}
 .btn.btn-light-gray {background: #dbdbdb; border-color: #dbdbdb; color: #232323}
 .btn.btn-light-gray:hover, .btn.btn-light-gray:focus {background: transparent; border-color: #dbdbdb; color: #dbdbdb}
-.btn.btn-deep-pink {background: #ff214f; border-color: #ff214f; color: #ffffff}
-.btn.btn-deep-pink:hover, .btn.btn-deep-pink:focus {background: transparent; border-color: #ff214f; color: #ff214f}
+.btn.btn-deep-pink {background: transparent; border-color: #ff214f; color: #ff214f}
+.btn.btn-deep-pink:hover, .btn.btn-deep-pink:focus {background: #ff214f; border-color: #ff214f; color: #ffffff}
 
 /* button transparent */
 .btn.btn-transparent-white {background: transparent; border-color: #ffffff; color: #ffffff}
@@ -610,7 +619,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
     Background image
 ====================================== */
 
-.parallax {position: relative; background-size: contain,cover; overflow: hidden; background-attachment: fixed ; background-color:#d4d1c9; }
+.parallax {position: relative; background-size: contain,cover; overflow: hidden; background-attachment: fixed ; background-color:#fff; }
 .fix-background {position: relative;  background-size: cover; animation-duration: 0s; animation-fill-mode: none; -webkit-animation-duration: 0s;  -webkit-animation-fill-mode: none; -moz-animation-duration: 0s;  -moz-animation-fill-mode: none; -ms-animation-duration: 0s; -ms-animation-fill-mode: none; -o-animation-fill-mode: none; overflow: hidden; background-position: center center; background-repeat: no-repeat; background-attachment: fixed }
 .cover-background {position: relative !important; background-size: contain,cover !important; overflow: hidden !important; background-position: center !important; background-repeat: no-repeat !important;}
 .background-size-inherit {background-size: width=200px height=900px}
@@ -2289,7 +2298,7 @@ header nav.navbar .navbar-nav > li > a, nav.navbar.bootsnav ul.nav > li > a{colo
 header nav.navbar.white-link .navbar-nav > li > a, nav.navbar.bootsnav.white-link ul.nav > li > a,
 header nav.navbar.white-link .header-social-icon a,  nav.navbar.bootsnav.white-link .header-social-icon a,
 header nav.navbar.white-link .header-searchbar a,  nav.navbar.bootsnav.white-link .header-searchbar a,
-header nav.navbar.bootsnav ul.nav.white-link > li > a,  nav.navbar.white-link .heder-menu-button a {color: #232323 }
+header nav.navbar.bootsnav ul.nav.white-link > li > a,  nav.navbar.white-link .heder-menu-button a {color: #ffffff }
 
 header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .navbar-nav > li > a,
 header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .header-searchbar a,
@@ -2714,7 +2723,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 ====================================== */
 
 .swiper-container {overflow: hidden; position: relative}
-.swiper-pagination-bullet-active {background: #232323}
+.swiper-pagination-bullet-active {background: #ff214f}
 .swiper-pagination {width: 100%}
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {bottom: 35px; width: 100%}
 .swiper-pagination-bullet {height: 9px; width: 9px}
@@ -2840,7 +2849,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 
 /* number pagination */
 .swiper-number { left: auto !important; right: 0!important; width: 35px !important; text-align: right!important; top:38% !important; bottom: inherit !important; }
-.swiper-number .swiper-pagination-bullet { background: transparent; color: #939393; display: block; font-size: 20px; height: 45px; line-height: 20px; opacity: .7; padding: 14px 0 0; text-align: center; width: 23px; border-radius: 0; margin: 0 0 5px 0; }
+.swiper-number .swiper-pagination-bullet { background: transparent; color: #000000; display: block; font-size: 20px; height: 45px; line-height: 20px; opacity: .7; padding: 14px 0 0; text-align: center; width: 23px; border-radius: 0; margin: 0 0 5px 0; }
 .swiper-number .swiper-pagination-bullet.swiper-pagination-bullet-active{ border-bottom: 1px solid rgba(0,0,0,.5); opacity: 1; }
 .swiper-number .swiper-pagination-bullet-active { color:#000; background: transparent; }
 
